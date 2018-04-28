@@ -6,14 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hyc的博客</title>
+  <title>一次RabbitMQ线上故障记录 | Hyc的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hyc的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="今天在线上环境中出现了一个很奇怪的RabbitMQ故障，特意记录下。  出现现象 排查过程 事后分析">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一次RabbitMQ线上故障记录">
+<meta property="og:url" content="http://yoursite.com/2018/04/19/一次RabbitMQ线上故障记录/index.html">
 <meta property="og:site_name" content="Hyc的博客">
+<meta property="og:description" content="今天在线上环境中出现了一个很奇怪的RabbitMQ故障，特意记录下。  出现现象 排查过程 事后分析">
+<meta property="og:image" content="http://yoursite.com/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-1.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-2.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-3.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-4.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-5.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-6.png">
+<meta property="og:updated_time" content="2018-04-23T15:02:01.673Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hyc的博客">
+<meta name="twitter:title" content="一次RabbitMQ线上故障记录">
+<meta name="twitter:description" content="今天在线上环境中出现了一个很奇怪的RabbitMQ故障，特意记录下。  出现现象 排查过程 事后分析">
+<meta name="twitter:image" content="http://yoursite.com/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-1.png">
   
     <link rel="alternative" href="/atom.xml" title="Hyc的博客" type="application/atom+xml">
   
@@ -135,16 +146,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-一次RabbitMQ线上故障记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-一次RabbitMQ线上故障记录" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/19/一次RabbitMQ线上故障记录/">一次RabbitMQ线上故障记录</a>
+    <h1 class="article-title" itemprop="name">
+      一次RabbitMQ线上故障记录
     </h1>
   
 
@@ -164,9 +173,17 @@
 <li>事后分析</li>
 </ul>
 <hr>
-        
-          <a class="article-more-a" href="/2018/04/19/一次RabbitMQ线上故障记录/#more">more >></a>
-        
+<a id="more"></a>
+<h2 id="出现原因"><a href="#出现原因" class="headerlink" title="出现原因"></a>出现原因</h2><p>由于公司有一个老版本系统在运维，是部署在Windows Server2012的环境上。今天这个系统出现了异常，关于队列有关的功能出现了不可用。因为该系统架构以及代码都比较老旧，而且正在逐步停止运维，定位问题难度比较高。</p>
+<p>具体现象如下：当运维人员发现系统出现异常后，重启了系统，但是还是没有效果。然后查看消息队列RabbitMQ的状态，发现处于停止状态，随后启动RabbitMQ，回到系统一看发现还是不可用。查看系统日志后发现还是无法连接队列，多次启动RabbitMQ，最后发现RabbitMQ无法启动。</p>
+<h2 id="排查过程"><a href="#排查过程" class="headerlink" title="排查过程"></a>排查过程</h2><h3 id="查找日志"><a href="#查找日志" class="headerlink" title="查找日志"></a>查找日志</h3><p>由于多次启动RabbitMQ失败，所以去查看RabbitMQ日志，由于安装RabbitMQ时并未改变日志路径，所以日志输出在默认路径    %APPDATA%\RabbitMQ。<br><img src="/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-1.png" title="一次RabbitMQ线上故障记录"></p>
+<h3 id="错误定位"><a href="#错误定位" class="headerlink" title="错误定位"></a>错误定位</h3><p>看日志时发现日志文件已经有600M，无法用Notepad++等工具打开，然后暂时删除日志文件，重启RabbitMQ希望重现问题抓取日志，但是操作几次后从新的日志文件看不出问题。<br>偶然查看磁盘空间，发现剩余0%（0字节可用），因为这台服务器是租用阿里云的资源，磁盘空间有限，可能由于一些不恰当的操作，导致服务器磁盘。<br>删除一些无效文件，使磁盘有空余空间，然后重启RabbitMQ服务，但是查看5672端口还是没有监听。</p>
+<p>因为从Windows服务启动信息不够，暂时先从命令行启动查看，发现错误信息如下：<br><img src="/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-2.png" title="一次RabbitMQ线上故障记录"></p>
+<h3 id="处理办法"><a href="#处理办法" class="headerlink" title="处理办法"></a>处理办法</h3><p>由于recovery.dets文件无法加载，导致RabbitMQ无法启动。为了能让系统可用，暂时先删除recovery.dets文件，然后启动RabbitMQ恢复正常。<br><img src="/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-3.png" title="一次RabbitMQ线上故障记录"></p>
+<h2 id="事后分析"><a href="#事后分析" class="headerlink" title="事后分析"></a>事后分析</h2><p>查看官方文档，关于RabbitMQ的数据存储：<br>RabbitMQ从3.7.0版本开始所有的消息数据到放在msg_stores/vhosts目录下，每个vhost单独放在一个子目录，每个子目录以 (vhost名字+哈希值).vhost命名，每个vhost分开存储。<br>在3.7.0以前，所有的消息都存在以下几个目录中：queues, msg_store_persistent和msg_store_transient。而且如果正常关机的话，是由recovery.dets文件来恢复元数据。<br><img src="/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-4.png" title="一次RabbitMQ线上故障记录"></p>
+<p>下载之前太大的日志，仔细查看ERROR日志，发现如下错误：<br><img src="/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-5.png" title="一次RabbitMQ线上故障记录"><br><img src="/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-6.png" title="一次RabbitMQ线上故障记录"></p>
+<p>应该是RabbitMQ在关闭时，将队列中的数据写入recovery.dets文件时由于磁盘空间不足，导致文件出现损坏（被删除的recovery.dets文件大小为0），然后RabbitMQ启动时无法从recovery.dets文件获取元数据，所以启动失败。</p>
+
       
 
       
@@ -177,16 +194,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/19/一次RabbitMQ线上故障记录/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/04/19/一次RabbitMQ线上故障记录/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2018/01/20/kubernetes安装/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">使用kubeadm安装Kubernetes</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -206,80 +282,14 @@
 
 
 
-
   
-    <article id="post-kubernetes安装" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/20/kubernetes安装/">使用kubeadm安装Kubernetes</a>
-    </h1>
   
 
-        
-        <a href="/2018/01/20/kubernetes安装/" class="archive-article-date">
-  	<time datetime="2018-01-20T04:33:57.401Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>因为业务要求，需要搭建一个容器平台，选择的Kubernetes+Docker搭建集群。<br>Kubernetes有多种安装方式，因为使用的不是Google Cloud和AWS，使用的是阿里云，所以采用kubeadm安装Kubernetes集群。</p>
-<ul>
-<li>准备工作</li>
-<li>安装docker</li>
-<li>安装kubeadm、kubelet、kubectl</li>
-<li>搭建集群</li>
-</ul>
-<hr>
-        
-          <a class="article-more-a" href="/2018/01/20/kubernetes安装/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/20/kubernetes安装/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
+  
 
   
+
   
 
 
@@ -302,8 +312,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

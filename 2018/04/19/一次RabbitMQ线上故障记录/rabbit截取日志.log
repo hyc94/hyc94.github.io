@@ -1,0 +1,588 @@
+=WARNING REPORT==== 19-Apr-2018::14:28:27 ===
+closing AMQP connection <0.510.0> ([::1]:64790 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:27 ===
+closing AMQP connection <0.504.0> (127.0.0.1:64788 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:27 ===
+closing AMQP connection <0.513.0> (127.0.0.1:64791 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:27 ===
+closing AMQP connection <0.509.0> (127.0.0.1:64789 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:32 ===
+closing AMQP connection <0.25967.4> (127.0.0.1:63047 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:34 ===
+closing AMQP connection <0.25897.4> ([::1]:62994 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:35 ===
+closing AMQP connection <0.26663.4> ([::1]:64498 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:36 ===
+closing AMQP connection <0.26181.4> ([::1]:63494 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:36 ===
+closing AMQP connection <0.25922.4> ([::1]:63002 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:37 ===
+closing AMQP connection <0.26354.4> (127.0.0.1:63920 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:38 ===
+closing AMQP connection <0.26307.4> (127.0.0.1:63830 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:40 ===
+closing AMQP connection <0.26259.4> (127.0.0.1:63678 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:40 ===
+closing AMQP connection <0.26083.4> (127.0.0.1:63264 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:41 ===
+closing AMQP connection <0.26195.4> (127.0.0.1:63501 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:43 ===
+closing AMQP connection <0.26382.4> ([::1]:63964 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:45 ===
+closing AMQP connection <0.26475.4> ([::1]:64104 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:47 ===
+closing AMQP connection <0.26094.4> ([::1]:63265 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:48 ===
+closing AMQP connection <0.26421.4> (127.0.0.1:64021 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:48 ===
+closing AMQP connection <0.25908.4> ([::1]:62996 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:49 ===
+closing AMQP connection <0.26616.4> (127.0.0.1:64431 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:51 ===
+closing AMQP connection <0.25986.4> ([::1]:63073 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:51 ===
+closing AMQP connection <0.27027.4> ([::1]:50310 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:52 ===
+closing AMQP connection <0.26056.4> ([::1]:63238 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:53 ===
+closing AMQP connection <0.26827.4> ([::1]:49247 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:53 ===
+closing AMQP connection <0.26443.4> (127.0.0.1:64048 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:54 ===
+closing AMQP connection <0.26891.4> ([::1]:49466 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:56 ===
+closing AMQP connection <0.26036.4> ([::1]:63188 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:57 ===
+closing AMQP connection <0.26108.4> (127.0.0.1:63284 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:58 ===
+closing AMQP connection <0.26246.4> (127.0.0.1:63652 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:28:59 ===
+closing AMQP connection <0.26223.4> (127.0.0.1:63560 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:00 ===
+closing AMQP connection <0.26556.4> (127.0.0.1:64298 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:04 ===
+closing AMQP connection <0.26393.4> (127.0.0.1:63967 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:04 ===
+closing AMQP connection <0.27044.4> ([::1]:50351 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=INFO REPORT==== 19-Apr-2018::14:29:05 ===
+accepting AMQP connection <0.27133.4> (127.0.0.1:50472 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 19-Apr-2018::14:29:05 ===
+accepting AMQP connection <0.27136.4> (127.0.0.1:50474 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 19-Apr-2018::14:29:05 ===
+accepting AMQP connection <0.27129.4> ([::1]:50473 -> [::1]:5672)
+
+=INFO REPORT==== 19-Apr-2018::14:29:05 ===
+accepting AMQP connection <0.27130.4> (127.0.0.1:50471 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 19-Apr-2018::14:29:05 ===
+connection <0.27136.4> (127.0.0.1:50474 -> 127.0.0.1:5672): user 'guest' authenticated and granted access to vhost '/'
+
+=INFO REPORT==== 19-Apr-2018::14:29:05 ===
+connection <0.27133.4> (127.0.0.1:50472 -> 127.0.0.1:5672): user 'guest' authenticated and granted access to vhost '/'
+
+=INFO REPORT==== 19-Apr-2018::14:29:05 ===
+connection <0.27130.4> (127.0.0.1:50471 -> 127.0.0.1:5672): user 'guest' authenticated and granted access to vhost '/'
+
+=INFO REPORT==== 19-Apr-2018::14:29:05 ===
+connection <0.27129.4> ([::1]:50473 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+
+=WARNING REPORT==== 19-Apr-2018::14:29:08 ===
+closing AMQP connection <0.26841.4> (127.0.0.1:49275 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:09 ===
+closing AMQP connection <0.25939.4> (127.0.0.1:63017 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:10 ===
+closing AMQP connection <0.26296.4> (127.0.0.1:63823 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:11 ===
+closing AMQP connection <0.26858.4> ([::1]:49295 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:12 ===
+closing AMQP connection <0.26008.4> (127.0.0.1:63133 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:17 ===
+closing AMQP connection <0.26019.4> (127.0.0.1:63137 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:19 ===
+closing AMQP connection <0.26072.4> (127.0.0.1:63258 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:24 ===
+closing AMQP connection <0.25853.4> ([::1]:62988 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:25 ===
+closing AMQP connection <0.26632.4> ([::1]:64441 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:26 ===
+closing AMQP connection <0.25864.4> (127.0.0.1:62989 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:26 ===
+closing AMQP connection <0.26324.4> ([::1]:63850 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:26 ===
+closing AMQP connection <0.25875.4> (127.0.0.1:62990 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=WARNING REPORT==== 19-Apr-2018::14:29:27 ===
+closing AMQP connection <0.25886.4> (127.0.0.1:62991 -> 127.0.0.1:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+
+=INFO REPORT==== 19-Apr-2018::14:32:53 ===
+accepting AMQP connection <0.27208.4> (127.0.0.1:51053 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 19-Apr-2018::14:32:53 ===
+connection <0.27208.4> (127.0.0.1:51053 -> 127.0.0.1:5672): user 'guest' authenticated and granted access to vhost '/'
+
+=INFO REPORT==== 19-Apr-2018::14:34:44 ===
+accepting AMQP connection <0.27224.4> ([::1]:51099 -> [::1]:5672)
+
+=INFO REPORT==== 19-Apr-2018::14:34:44 ===
+connection <0.27224.4> ([::1]:51099 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+
+=INFO REPORT==== 19-Apr-2018::14:35:16 ===
+accepting AMQP connection <0.27238.4> ([::1]:51106 -> [::1]:5672)
+
+=INFO REPORT==== 19-Apr-2018::14:35:16 ===
+connection <0.27238.4> ([::1]:51106 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+
+=INFO REPORT==== 19-Apr-2018::14:37:56 ===
+accepting AMQP connection <0.27254.4> (127.0.0.1:51152 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 19-Apr-2018::14:37:56 ===
+connection <0.27254.4> (127.0.0.1:51152 -> 127.0.0.1:5672): user 'guest' authenticated and granted access to vhost '/'
+
+=INFO REPORT==== 19-Apr-2018::14:43:22 ===
+accepting AMQP connection <0.27282.4> (127.0.0.1:51517 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 19-Apr-2018::14:43:22 ===
+connection <0.27282.4> (127.0.0.1:51517 -> 127.0.0.1:5672): user 'guest' authenticated and granted access to vhost '/'
+
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+RabbitMQ is asked to stop...
+
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Stopping RabbitMQ applications and their dependencies in the following order: 
+    rabbitmq_management
+    amqp_client
+    rabbitmq_web_dispatch
+    cowboy
+    cowlib
+    rabbitmq_management_agent
+    rabbit
+    mnesia
+    rabbit_common
+    os_mon
+
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Stopping application 'rabbitmq_management'
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Stopping application 'amqp_client'
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Stopping application 'rabbitmq_web_dispatch'
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Stopping application 'cowboy'
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Stopping application 'cowlib'
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Stopping application 'rabbitmq_management_agent'
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Stopping application 'rabbit'
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+stopped TCP Listener on 0.0.0.0:5672
+
+=ERROR REPORT==== 19-Apr-2018::14:44:27 ===
+Error on AMQP connection <0.27136.4> (127.0.0.1:50474 -> 127.0.0.1:5672, vhost: '/', user: 'guest', state: blocking), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=ERROR REPORT==== 19-Apr-2018::14:44:27 ===
+Error on AMQP connection <0.27282.4> (127.0.0.1:51517 -> 127.0.0.1:5672, vhost: '/', user: 'guest', state: blocked), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=ERROR REPORT==== 19-Apr-2018::14:44:27 ===
+Error on AMQP connection <0.27130.4> (127.0.0.1:50471 -> 127.0.0.1:5672, vhost: '/', user: 'guest', state: blocking), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=ERROR REPORT==== 19-Apr-2018::14:44:27 ===
+Error on AMQP connection <0.27254.4> (127.0.0.1:51152 -> 127.0.0.1:5672, vhost: '/', user: 'guest', state: blocked), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=ERROR REPORT==== 19-Apr-2018::14:44:27 ===
+Error on AMQP connection <0.27133.4> (127.0.0.1:50472 -> 127.0.0.1:5672, vhost: '/', user: 'guest', state: blocking), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=ERROR REPORT==== 19-Apr-2018::14:44:27 ===
+Error on AMQP connection <0.27208.4> (127.0.0.1:51053 -> 127.0.0.1:5672, vhost: '/', user: 'guest', state: blocked), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+stopped TCP Listener on [::]:5672
+
+=ERROR REPORT==== 19-Apr-2018::14:44:27 ===
+Error on AMQP connection <0.27224.4> ([::1]:51099 -> [::1]:5672, vhost: '/', user: 'guest', state: blocked), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=ERROR REPORT==== 19-Apr-2018::14:44:27 ===
+Error on AMQP connection <0.27238.4> ([::1]:51106 -> [::1]:5672, vhost: '/', user: 'guest', state: blocked), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=ERROR REPORT==== 19-Apr-2018::14:44:27 ===
+Error on AMQP connection <0.27129.4> ([::1]:50473 -> [::1]:5672, vhost: '/', user: 'guest', state: blocking), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Stopping message store for directory 'c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/db/RABBIT~1/msg_store_persistent'
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Message store for directory 'c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/db/RABBIT~1/msg_store_persistent' is stopped
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Stopping message store for directory 'c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/db/RABBIT~1/msg_store_transient'
+=ERROR REPORT==== 19-Apr-2018::14:44:27 ===
+** Generic server msg_store_transient terminating
+** Last message in was {'EXIT',<0.185.0>,shutdown}
+** When Server state == {msstate,
+                            "c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/db/RABBIT~1/msg_store_transient",
+                            rabbit_msg_store_ets_index,
+                            {state,4194398,
+                                "c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/db/RABBIT~1/msg_store_transient"},
+                            0,#Ref<0.0.1.1844>,
+                            {dict,0,16,16,8,80,48,
+                                {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                 []},
+                                {{[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                  [],[]}}},
+                            undefined,0,0,[],<0.250.0>,4259935,4128861,
+                            4325472,4391009,
+                            {set,0,16,16,8,80,48,
+                                {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                 []},
+                                {{[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                  [],[]}}},
+                            4456546,
+                            {dict,0,16,16,8,80,48,
+                                {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                 []},
+                                {{[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                  [],[]}}},
+                            false,16777216,
+                            {dict,0,16,16,8,80,48,
+                                {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                 []},
+                                {{[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                  [],[]}}},
+                            {4000,800}}
+** Reason for termination == 
+** {{badmatch,{error,{file_error,"c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/db/RABBIT~1/msg_store_transient/msg_store_index.ets",
+                                 enospc}}},
+    [{rabbit_msg_store_ets_index,terminate,1,
+                                 [{file,"src/rabbit_msg_store_ets_index.erl"},
+                                  {line,77}]},
+     {rabbit_msg_store,terminate,2,
+                       [{file,"src/rabbit_msg_store.erl"},{line,1002}]},
+     {gen_server2,terminate,3,[{file,"src/gen_server2.erl"},{line,1147}]},
+     {proc_lib,wake_up,3,[{file,"proc_lib.erl"},{line,257}]}]}
+** In 'terminate' callback with reason ==
+** shutdown
+
+=ERROR REPORT==== 19-Apr-2018::14:44:27 ===
+** Generic server <0.246.0> terminating 
+** Last message in was {'EXIT',<0.185.0>,shutdown}
+** When Server state == undefined
+** Reason for termination == 
+** {{badmatch,{error,{file_error,"c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/db/RABBIT~1/recovery.dets",
+                                 enospc}}},
+    [{rabbit_recovery_terms,flush,0,
+                            [{file,"src/rabbit_recovery_terms.erl"},
+                             {line,130}]},
+     {rabbit_recovery_terms,close_table,0,
+                            [{file,"src/rabbit_recovery_terms.erl"},
+                             {line,133}]},
+     {gen_server,try_terminate,3,[{file,"gen_server.erl"},{line,629}]},
+     {gen_server,terminate,7,[{file,"gen_server.erl"},{line,795}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Stopping application 'mnesia'
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Stopping application 'rabbit_common'
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Stopping application 'os_mon'
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Successfully stopped RabbitMQ and its dependencies
+
+=INFO REPORT==== 19-Apr-2018::14:44:27 ===
+Halting Erlang VM with the following applications:
+    inets
+    ranch
+    ssl
+    public_key
+    crypto
+    syntax_tools
+    asn1
+    xmerl
+    compiler
+    sasl
+    stdlib
+    kernel
+
+=INFO REPORT==== 19-Apr-2018::14:44:50 ===
+Starting RabbitMQ 3.6.10 on Erlang 19.3
+Copyright (C) 2007-2017 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 19-Apr-2018::14:44:50 ===
+node           : rabbit@iZ23toygdm2Z
+home dir       : C:\Windows
+config file(s) : c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/rabbitmq.config
+cookie hash    : xoqft819jwmctHQC2xaIww==
+log            : C:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/log/RABBIT~1.LOG
+sasl log       : C:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/log/RABBIT~2.LOG
+database dir   : c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/db/RABBIT~1
+
+=INFO REPORT==== 19-Apr-2018::15:04:54 ===
+Starting RabbitMQ 3.6.10 on Erlang 19.3
+Copyright (C) 2007-2017 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 19-Apr-2018::15:04:54 ===
+node           : rabbit@iZ23toygdm2Z
+home dir       : C:\Windows
+config file(s) : c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/rabbitmq.config
+cookie hash    : xoqft819jwmctHQC2xaIww==
+log            : C:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/log/RABBIT~1.LOG
+sasl log       : C:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/log/RABBIT~2.LOG
+database dir   : c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/db/RABBIT~1
+
+=INFO REPORT==== 19-Apr-2018::15:05:01 ===
+Memory limit set to 6553MB of 16383MB total.
+
+=INFO REPORT==== 19-Apr-2018::15:05:01 ===
+Enabling free disk space monitoring
+
+=INFO REPORT==== 19-Apr-2018::15:05:01 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 19-Apr-2018::15:05:01 ===
+Limiting to approx 8092 file handles (7280 sockets)
+
+=INFO REPORT==== 19-Apr-2018::15:05:01 ===
+FHC read buffering:  OFF
+FHC write buffering: ON
+
+=INFO REPORT==== 19-Apr-2018::15:05:01 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 19-Apr-2018::15:05:01 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 19-Apr-2018::15:05:01 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 19-Apr-2018::15:05:01 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 19-Apr-2018::15:05:01 ===
+Management plugin: using rates mode 'basic'
+
+=INFO REPORT==== 19-Apr-2018::15:05:01 ===
+Error description:
+   {could_not_start,rabbit,
+       {{badmatch,
+            {error,
+                {{{badmatch,
+                      {error,
+                          {not_a_dets_file,
+                              "c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/db/RABBIT~1/recovery.dets"}}},
+                  [{rabbit_recovery_terms,open_table,0,
+                       [{file,"src/rabbit_recovery_terms.erl"},{line,126}]},
+                   {rabbit_recovery_terms,init,1,
+                       [{file,"src/rabbit_recovery_terms.erl"},{line,107}]},
+                   {gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},
+                   {proc_lib,init_p_do_apply,3,
+                       [{file,"proc_lib.erl"},{line,247}]}]},
+                 {child,undefined,rabbit_recovery_terms,
+                     {rabbit_recovery_terms,start_link,[]},
+                     transient,30000,worker,
+                     [rabbit_recovery_terms]}}}},
+        [{rabbit_queue_index,start,1,
+             [{file,"src/rabbit_queue_index.erl"},{line,491}]},
+         {rabbit_variable_queue,start,1,
+             [{file,"src/rabbit_variable_queue.erl"},{line,466}]},
+         {rabbit_priority_queue,start,1,
+             [{file,"src/rabbit_priority_queue.erl"},{line,92}]},
+         {rabbit_amqqueue,recover,0,
+             [{file,"src/rabbit_amqqueue.erl"},{line,238}]},
+         {rabbit,recover,0,[{file,"src/rabbit.erl"},{line,799}]},
+         {rabbit_boot_steps,'-run_step/2-lc$^1/1-1-',1,
+             [{file,"src/rabbit_boot_steps.erl"},{line,49}]},
+         {rabbit_boot_steps,run_step,2,
+             [{file,"src/rabbit_boot_steps.erl"},{line,49}]},
+         {rabbit_boot_steps,'-run_boot_steps/1-lc$^0/1-0-',1,
+             [{file,"src/rabbit_boot_steps.erl"},{line,26}]}]}}
+
+Log files (may contain more information):
+   C:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/log/RABBIT~1.LOG
+   C:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/log/RABBIT~2.LOG
+
+
+=INFO REPORT==== 19-Apr-2018::15:05:11 ===
+Starting RabbitMQ 3.6.10 on Erlang 19.3
+Copyright (C) 2007-2017 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 19-Apr-2018::15:05:11 ===
+node           : rabbit@iZ23toygdm2Z
+home dir       : C:\Windows
+config file(s) : c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/rabbitmq.config
+cookie hash    : xoqft819jwmctHQC2xaIww==
+log            : C:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/log/RABBIT~1.LOG
+sasl log       : C:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/log/RABBIT~2.LOG
+database dir   : c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/db/RABBIT~1
+
+=INFO REPORT==== 19-Apr-2018::15:05:18 ===
+Memory limit set to 6553MB of 16383MB total.
+
+=INFO REPORT==== 19-Apr-2018::15:05:18 ===
+Enabling free disk space monitoring
+
+=INFO REPORT==== 19-Apr-2018::15:05:18 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 19-Apr-2018::15:05:18 ===
+Limiting to approx 8092 file handles (7280 sockets)
+
+=INFO REPORT==== 19-Apr-2018::15:05:18 ===
+FHC read buffering:  OFF
+FHC write buffering: ON
+
+=INFO REPORT==== 19-Apr-2018::15:05:18 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 19-Apr-2018::15:05:18 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 19-Apr-2018::15:05:18 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 19-Apr-2018::15:05:18 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 19-Apr-2018::15:05:18 ===
+Management plugin: using rates mode 'basic'
+
+=INFO REPORT==== 19-Apr-2018::15:05:18 ===
+Error description:
+   {could_not_start,rabbit,
+       {{badmatch,
+            {error,
+                {{{badmatch,
+                      {error,
+                          {not_a_dets_file,
+                              "c:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/db/RABBIT~1/recovery.dets"}}},
+                  [{rabbit_recovery_terms,open_table,0,
+                       [{file,"src/rabbit_recovery_terms.erl"},{line,126}]},
+                   {rabbit_recovery_terms,init,1,
+                       [{file,"src/rabbit_recovery_terms.erl"},{line,107}]},
+                   {gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},
+                   {proc_lib,init_p_do_apply,3,
+                       [{file,"proc_lib.erl"},{line,247}]}]},
+                 {child,undefined,rabbit_recovery_terms,
+                     {rabbit_recovery_terms,start_link,[]},
+                     transient,30000,worker,
+                     [rabbit_recovery_terms]}}}},
+        [{rabbit_queue_index,start,1,
+             [{file,"src/rabbit_queue_index.erl"},{line,491}]},
+         {rabbit_variable_queue,start,1,
+             [{file,"src/rabbit_variable_queue.erl"},{line,466}]},
+         {rabbit_priority_queue,start,1,
+             [{file,"src/rabbit_priority_queue.erl"},{line,92}]},
+         {rabbit_amqqueue,recover,0,
+             [{file,"src/rabbit_amqqueue.erl"},{line,238}]},
+         {rabbit,recover,0,[{file,"src/rabbit.erl"},{line,799}]},
+         {rabbit_boot_steps,'-run_step/2-lc$^1/1-1-',1,
+             [{file,"src/rabbit_boot_steps.erl"},{line,49}]},
+         {rabbit_boot_steps,run_step,2,
+             [{file,"src/rabbit_boot_steps.erl"},{line,49}]},
+         {rabbit_boot_steps,'-run_boot_steps/1-lc$^0/1-0-',1,
+             [{file,"src/rabbit_boot_steps.erl"},{line,26}]}]}}
+
+Log files (may contain more information):
+   C:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/log/RABBIT~1.LOG
+   C:/Users/ADMINI~1/AppData/Roaming/RabbitMQ/log/RABBIT~2.LOG
