@@ -9,6 +9,7 @@
   <title>一次RabbitMQ线上故障记录 | Hyc的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="今天在线上环境中出现了一个很奇怪的RabbitMQ故障，特意记录下。  出现现象 排查过程 事后分析">
+<meta name="keywords" content="mq">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一次RabbitMQ线上故障记录">
 <meta property="og:url" content="http://yoursite.com/2018/04/19/一次RabbitMQ线上故障记录/index.html">
@@ -20,7 +21,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-4.png">
 <meta property="og:image" content="http://yoursite.com/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-5.png">
 <meta property="og:image" content="http://yoursite.com/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-6.png">
-<meta property="og:updated_time" content="2018-04-23T15:02:01.673Z">
+<meta property="og:updated_time" content="2018-09-10T14:27:34.606Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一次RabbitMQ线上故障记录">
 <meta name="twitter:description" content="今天在线上环境中出现了一个很奇怪的RabbitMQ故障，特意记录下。  出现现象 排查过程 事后分析">
@@ -176,7 +177,7 @@
 <a id="more"></a>
 <h2 id="出现原因"><a href="#出现原因" class="headerlink" title="出现原因"></a>出现原因</h2><p>由于公司有一个老版本系统在运维，是部署在Windows Server2012的环境上。今天这个系统出现了异常，关于队列有关的功能出现了不可用。因为该系统架构以及代码都比较老旧，而且正在逐步停止运维，定位问题难度比较高。</p>
 <p>具体现象如下：当运维人员发现系统出现异常后，重启了系统，但是还是没有效果。然后查看消息队列RabbitMQ的状态，发现处于停止状态，随后启动RabbitMQ，回到系统一看发现还是不可用。查看系统日志后发现还是无法连接队列，多次启动RabbitMQ，最后发现RabbitMQ无法启动。</p>
-<h2 id="排查过程"><a href="#排查过程" class="headerlink" title="排查过程"></a>排查过程</h2><h3 id="查找日志"><a href="#查找日志" class="headerlink" title="查找日志"></a>查找日志</h3><p>由于多次启动RabbitMQ失败，所以去查看RabbitMQ日志，由于安装RabbitMQ时并未改变日志路径，所以日志输出在默认路径    %APPDATA%\RabbitMQ。<br><img src="/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-1.png" title="一次RabbitMQ线上故障记录"></p>
+<h2 id="排查过程"><a href="#排查过程" class="headerlink" title="排查过程"></a>排查过程</h2><h3 id="查找日志"><a href="#查找日志" class="headerlink" title="查找日志"></a>查找日志</h3><p>由于多次启动RabbitMQ失败，所以去查看RabbitMQ日志，由于安装RabbitMQ时并未改变日志路径，所以日志输出在默认路径    %APPDATA%\RabbitMQ。<br><a href="https://www.rabbitmq.com/relocate.html" target="_blank" rel="noopener">https://www.rabbitmq.com/relocate.html</a><br><img src="/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-1.png" title="一次RabbitMQ线上故障记录"></p>
 <h3 id="错误定位"><a href="#错误定位" class="headerlink" title="错误定位"></a>错误定位</h3><p>看日志时发现日志文件已经有600M，无法用Notepad++等工具打开，然后暂时删除日志文件，重启RabbitMQ希望重现问题抓取日志，但是操作几次后从新的日志文件看不出问题。<br>偶然查看磁盘空间，发现剩余0%（0字节可用），因为这台服务器是租用阿里云的资源，磁盘空间有限，可能由于一些不恰当的操作，导致服务器磁盘。<br>删除一些无效文件，使磁盘有空余空间，然后重启RabbitMQ服务，但是查看5672端口还是没有监听。</p>
 <p>因为从Windows服务启动信息不够，暂时先从命令行启动查看，发现错误信息如下：<br><img src="/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-2.png" title="一次RabbitMQ线上故障记录"></p>
 <h3 id="处理办法"><a href="#处理办法" class="headerlink" title="处理办法"></a>处理办法</h3><p>由于recovery.dets文件无法加载，导致RabbitMQ无法启动。为了能让系统可用，暂时先删除recovery.dets文件，然后启动RabbitMQ恢复正常。<br><img src="/2018/04/19/一次RabbitMQ线上故障记录/一次RabbitMQ线上故障记录-3.png" title="一次RabbitMQ线上故障记录"></p>
@@ -191,6 +192,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">mq</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -254,6 +266,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2018/09/10/直面Java-面向对象1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          直面Java-面向对象1
+        
+      </div>
+    </a>
   
   
     <a href="/2018/01/20/kubernetes安装/" id="article-nav-older" class="article-nav-link-wrap">
@@ -381,6 +402,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mq</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">devops</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
